@@ -1,0 +1,942 @@
+@import url(../css/reset.css);
+@import url(../css/font.css);
+#header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+#header .personal {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+#header .personal .personal-gap {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+}
+#header .personal .personal-gap .personal-wrap {
+  margin: 0 0 0 auto;
+  display: flex;
+}
+#header .personal .personal-gap .personal-wrap li {
+  padding: 0 10px;
+}
+#header .personal .personal-gap .personal-wrap li span i {
+  color: #c7b3f1;
+}
+
+#gaib-wrap .title {
+  width: 100%;
+  position: relative;
+}
+#gaib-wrap .title .title-gap {
+  width: 100%;
+  padding: 80px 40px 60px 40px;
+}
+#gaib-wrap .title .title-gap .title-wrap {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+#gaib-wrap .title .title-gap .title-wrap .info {
+  font-size: 15px;
+}
+#gaib-wrap #gaib {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  border-top: 3px solid #eee9f9;
+}
+#gaib-wrap #gaib .gaib-gap {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 50px;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap {
+  width: 100%;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul {
+  width: 100%;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .labels {
+  width: 20%;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background: #f3f2fa;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs {
+  width: 80%;
+  height: 100%;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs input {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #eee9f9;
+  border-radius: 5px;
+  outline: none;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs input:focus {
+  border: 1px solid #c7b3f1;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs .guiding {
+  padding: 5px;
+  display: none;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs .guiding p {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 15px;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li .inputs .guiding p.on {
+  color: #c7b3f1;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li button {
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Hahmlet;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#gaib-wrap #gaib .gaib-gap .gaib-wrap > ul > li button:hover {
+  background: #f3f2fa;
+  cursor: pointer;
+}
+
+#login {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+#login .login-gap {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+#login .login-gap .login-wrap {
+  width: 100%;
+}
+#login .login-gap .login-wrap > ul {
+  width: 100%;
+}
+#login .login-gap .login-wrap > ul > li {
+  width: 100%;
+  height: 70px;
+  padding: 10px 0;
+  display: flex;
+}
+#login .login-gap .login-wrap > ul > li input {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+#login .login-gap .login-wrap > ul > li button {
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: Hahmlet;
+  width: 80px;
+  height: 100%;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#login .login-gap .login-wrap > ul > li button:hover {
+  background: #eee9f9;
+  cursor: pointer;
+}
+
+#index-wrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+#index-wrap #main {
+  width: 100%;
+  display: flex;
+}
+#index-wrap #main .board {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#index-wrap #main .board .title {
+  width: 100%;
+  position: relative;
+}
+#index-wrap #main .board .title .title-gap {
+  width: 100%;
+  padding: 80px 40px 60px 40px;
+}
+#index-wrap #main .board .title .title-gap .title-wrap {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+#index-wrap #main .board .title .title-gap .title-wrap .info {
+  font-size: 15px;
+}
+#index-wrap #main .board .title #select {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 20%;
+  z-index: 5;
+}
+#index-wrap #main .board .title #select .select-gap {
+  width: 100%;
+  display: flex;
+}
+#index-wrap #main .board .title #select .select-gap .select-wrap {
+  width: 100%;
+  border-left: 2px solid #c7b3f1;
+}
+#index-wrap #main .board .title #select .select-gap .select-wrap .taptap {
+  width: 90px;
+  height: 50px;
+  margin: 10px 0;
+  background: #f3f2fa;
+  border-right: 10px solid #c7b3f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#index-wrap #main .board .title #select .select-gap .select-wrap .taptap.on {
+  width: 150px;
+  border-right: 10px solid #c7b3f1;
+  font-weight: 600;
+  font-size: 16px;
+}
+#index-wrap #main .board .content {
+  width: 100%;
+}
+#index-wrap #main .board .content .content-gap {
+  width: 100%;
+  padding: 20px;
+}
+#index-wrap #main .board .content .content-gap .content-wrap {
+  width: 100%;
+}
+#index-wrap #main .board .content .content-gap .content-wrap thead tr {
+  height: 40px;
+}
+#index-wrap #main .board .content .content-gap .content-wrap thead tr th:nth-child(1) {
+  width: 15%;
+  background: #eee9f9;
+}
+#index-wrap #main .board .content .content-gap .content-wrap thead tr th:nth-child(2) {
+  width: 55%;
+  background: #eee9f9;
+}
+#index-wrap #main .board .content .content-gap .content-wrap thead tr th:nth-child(3) {
+  width: 15%;
+  background: #eee9f9;
+}
+#index-wrap #main .board .content .content-gap .content-wrap thead tr th:nth-child(4) {
+  width: 15%;
+  background: #eee9f9;
+}
+#index-wrap #main .board .content .content-gap .content-wrap tbody tr {
+  height: 35px;
+}
+#index-wrap #main .board .content .content-gap .content-wrap tbody tr td {
+  padding: 3px;
+  text-align: center;
+  border-bottom: 1px solid #eee9f9;
+}
+#index-wrap #main .board .content .content-gap .content-wrap tbody tr td a {
+  display: block;
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  transition: all 0.3s;
+}
+#index-wrap #main .board .content .content-gap .content-wrap tbody tr td a:hover {
+  text-shadow: 0 0 2px #c7b3f1;
+}
+#index-wrap #main .board #search {
+  width: 100%;
+}
+#index-wrap #main .board #search .search-gap {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+}
+#index-wrap #main .board #search .search-gap .search-wrap {
+  margin: 0 auto;
+}
+#index-wrap #main .board #search .search-gap .search-wrap form {
+  width: 100%;
+  height: 30px;
+  position: relative;
+}
+#index-wrap #main .board #search .search-gap .search-wrap form select {
+  width: 100px;
+  height: 100%;
+  font-family: Hahmlet;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+#index-wrap #main .board #search .search-gap .search-wrap form input {
+  margin: 0 5px 0 10px;
+  height: 90%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c7b3f1;
+}
+#index-wrap #main .board #search .search-gap .search-wrap form button {
+  font-family: Hahmlet;
+  width: 50px;
+  height: 100%;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#index-wrap #main .board #search .search-gap .search-wrap form button:hover {
+  background: #eee9f9;
+  cursor: pointer;
+}
+#index-wrap #main .board .control {
+  width: 100%;
+}
+#index-wrap #main .board .control .control-gap {
+  width: 100%;
+  padding: 20px;
+}
+#index-wrap #main .board .control .control-gap .control-wrap {
+  width: 100%;
+  display: flex;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging {
+  text-align: center;
+  width: 100%;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging a {
+  vertical-align: bottom;
+  margin: 0 5px;
+  transition: all 0.2s;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging a:hover {
+  color: #c7b3f1;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging a i {
+  vertical-align: bottom;
+  font-size: 16px;
+  margin: 0 5px;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging a b {
+  text-decoration: none;
+  color: #c7b3f1;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging span {
+  margin: 0 5px;
+  color: #ddd;
+}
+#index-wrap #main .board .control .control-gap .control-wrap #page_num .paging span i {
+  font-size: 16px;
+  margin: 0 5px;
+}
+#index-wrap #main .board .control .control-gap .control-wrap .create {
+  display: flex;
+  width: 20%;
+}
+#index-wrap #main .board .control .control-gap .control-wrap .create .create-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 10px auto;
+  width: 80px;
+  height: 45px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#index-wrap #main .board .control .control-gap .control-wrap .create .create-btn:hover {
+  background: #eee9f9;
+}
+#write-wrap {
+  position: relative;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+}
+#write-wrap .title {
+  width: 100%;
+}
+#write-wrap .title .title-gap {
+  width: 100%;
+  padding: 80px 40px 60px 40px;
+}
+#write-wrap .title .title-gap .title-wrap {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+#write-wrap .title .title-gap .title-wrap .info {
+  font-size: 15px;
+}
+#write-wrap #write {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#write-wrap #write .write-gap {
+  width: 100%;
+  padding: 50px 0;
+}
+#write-wrap #write .write-gap .write-wrap {
+  width: 100%;
+}
+#write-wrap #write .write-gap .write-wrap form {
+  width: 100%;
+  display: flex;
+}
+#write-wrap #write .write-gap .write-wrap form .insert {
+  width: 100%;
+  margin: 0 auto;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li {
+  width: 100%;
+  display: flex;
+  padding: 2px;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .irum {
+  background: #eee9f9;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .writing {
+  width: 90%;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .writing textarea {
+  font-family: "Hahmlet";
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 30px;
+  resize: none;
+  white-space: wrap;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .writing textarea:focus {
+  outline: none;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .editor-writing {
+  width: 90%;
+  height: 700px;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .editor-writing textarea {
+  font-family: "Hahmlet";
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 30px;
+  resize: none;
+  white-space: wrap;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li .editor-writing textarea:focus {
+  outline: none;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li button.submit-btn {
+  width: 80px;
+  height: 45px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px 10px auto;
+  font-size: 15px;
+  transition: all 0.3s;
+  color: #555;
+  cursor: pointer;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li button.submit-btn:hover {
+  background: #eee9f9;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li:nth-child(3) textarea {
+  height: 300px;
+}
+#write-wrap #write .write-gap .write-wrap form .insert li:nth-child(4) {
+  border-bottom: none;
+}
+
+#board-contents {
+  width: 100vw;
+  position: relative;
+  z-index: 3;
+}
+#board-contents .alltitle {
+  width: 100%;
+}
+#board-contents .alltitle .alltitle-gap {
+  width: 100%;
+  padding: 80px 40px 60px 40px;
+}
+#board-contents .alltitle .alltitle-gap .alltitle-wrap {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+#board-contents .alltitle .alltitle-gap .alltitle-wrap .info {
+  font-size: 15px;
+}
+#board-contents .wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#board-contents .wrap .title {
+  width: 100%;
+}
+#board-contents .wrap .title .title-gap {
+  width: 100%;
+  padding: 30px 20px;
+}
+#board-contents .wrap .title .title-gap .title-wrap {
+  display: flex;
+}
+#board-contents .wrap .title .title-gap .title-wrap .right {
+  width: 100%;
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: 0 0 5px #c7b3f1;
+}
+#board-contents .wrap .nickname {
+  width: 100%;
+}
+#board-contents .wrap .nickname .nickname-gap {
+  width: 100%;
+  padding: 3px 20px;
+}
+#board-contents .wrap .nickname .nickname-gap .nickname-wrap {
+  width: 100%;
+  display: flex;
+}
+#board-contents .wrap .nickname .nickname-gap .nickname-wrap .left {
+  width: 10%;
+  text-align: center;
+  padding: 10px 5px;
+  background: #eee9f9;
+}
+#board-contents .wrap .nickname .nickname-gap .nickname-wrap .right {
+  width: 100%;
+  font-weight: 600;
+  text-indent: 20px;
+  padding: 10px 5px;
+}
+#board-contents .wrap .today {
+  width: 100%;
+}
+#board-contents .wrap .today .today-gap {
+  width: 100%;
+  padding: 3px 20px;
+}
+#board-contents .wrap .today .today-gap .today-wrap {
+  width: 100%;
+  display: flex;
+}
+#board-contents .wrap .today .today-gap .today-wrap .left {
+  width: 10%;
+  text-align: center;
+  padding: 10px 5px;
+  background: #eee9f9;
+}
+#board-contents .wrap .today .today-gap .today-wrap .right {
+  width: 100%;
+  font-weight: 600;
+  text-indent: 20px;
+  padding: 10px 5px;
+}
+#board-contents .wrap .contents {
+  width: 100%;
+  margin: 10px 0 0 0;
+  border-top: 5px dashed #eee9f9;
+  border-bottom: 5px dashed #eee9f9;
+}
+#board-contents .wrap .contents .contents-gap {
+  width: 100%;
+  padding: 20px;
+}
+#board-contents .wrap .contents .contents-gap .contents-wrap {
+  width: 100%;
+  line-height: 120%;
+  white-space: pre-line;
+}
+#board-contents .wrap .contents .contents-gap .contents-wrap p {
+  word-break: break-all;
+}
+#board-contents .wrap .control {
+  width: 100%;
+}
+#board-contents .wrap .control .control-gap {
+  width: 100%;
+  padding: 20px;
+}
+#board-contents .wrap .control .control-gap .control-wrap {
+  width: 100%;
+  display: flex;
+}
+#board-contents .wrap .control .control-gap .control-wrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 45px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#board-contents .wrap .control .control-gap .control-wrap a:hover {
+  background: #eee9f9;
+}
+#board-contents .wrap .control .control-gap .control-wrap a.list-btn {
+  margin: 0 auto 0 0;
+}
+#board-contents .wrap .control .control-gap .control-wrap .control-wrap-right {
+  margin: 0 0 0 auto;
+  display: flex;
+}
+#board-contents .wrap .control .control-gap .control-wrap .control-wrap-right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 45px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#board-contents .wrap .control .control-gap .control-wrap .control-wrap-right a:hover {
+  background: #eee9f9;
+}
+#board-contents .wrap #comment {
+  width: 100%;
+  margin: 0 auto;
+}
+#board-contents .wrap #comment .comment-gap {
+  width: 100%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap {
+  width: 100%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read {
+  width: 100%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap {
+  width: 100%;
+  padding: 10px 20px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f3f2fa;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li {
+  width: 100%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(1) {
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  display: flex;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(1) .comment-name {
+  padding: 0 10px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 17px;
+  color: #c7b3f1;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(1) .comment-time {
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #bbb;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(1) .comment-modify a {
+  display: inline-block;
+  margin: 0;
+  padding: 2px;
+  width: 40px;
+  height: 17px;
+  vertical-align: bottom;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  background: none;
+  color: #c7b3f1;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(1) .comment-modify a:hover {
+  background: #eee9f9;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li:nth-child(2) {
+  width: 100%;
+  padding: 10px 20px;
+  word-break: break-all;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li > textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #c7b3f1;
+  outline: none;
+  resize: none;
+  font-family: Hahmlet;
+  padding: 10px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li button {
+  width: 100%;
+  height: 25px;
+  background: #c7b3f1;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li button:active {
+  background: #eee9f9;
+  color: #c7b3f1;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li.reply-modify-wrap {
+  display: none;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-read .read-gap .read-wrap > li.reply-modify-wrap .replymodify {
+  margin-top: 5px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write {
+  width: 100%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap {
+  width: 100%;
+  padding: 10px 20px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li {
+  width: 100%;
+  display: flex;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li .left {
+  width: 30%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c7b3f1;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li .right {
+  width: 70%;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li .right textarea {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: Hahmlet;
+  text-indent: 10px;
+  line-height: 21px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li > textarea {
+  width: 100%;
+  height: 120px;
+  background: none;
+  border: 1px solid #c7b3f1;
+  outline: none;
+  resize: none;
+  font-family: Hahmlet;
+  padding: 10px;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li button {
+  width: 100%;
+  height: 25px;
+  background: #c7b3f1;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li button:active {
+  background: #eee9f9;
+  color: #c7b3f1;
+}
+#board-contents .wrap #comment .comment-gap .comment-wrap .comment-write .write-gap li:nth-child(1) {
+  width: 320px;
+  height: 25px;
+  padding: 2px 0;
+  background: #eee9f9;
+  border: none;
+  border-radius: 5px 5px 0 0;
+}
+
+#modify-wrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+#modify-wrap .title {
+  width: 100%;
+}
+#modify-wrap .title .title-gap {
+  width: 100%;
+  padding: 80px 40px 60px 40px;
+}
+#modify-wrap .title .title-gap .title-wrap {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+#modify-wrap .title .title-gap .title-wrap .info {
+  font-size: 15px;
+}
+#modify-wrap #modify {
+  width: 100vw;
+  margin: 0 auto;
+}
+#modify-wrap #modify .modify-gap {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+}
+#modify-wrap #modify .modify-gap .modify-wrap {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form {
+  width: 100%;
+  display: flex;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update {
+  width: 100%;
+  margin: 0 auto;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li {
+  width: 100%;
+  display: flex;
+  padding: 2px;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .irum {
+  background: #eee9f9;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .writing {
+  width: 90%;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .writing textarea {
+  font-family: "Hahmlet";
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 30px;
+  resize: none;
+  white-space: wrap;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .writing textarea:focus {
+  outline: none;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .editor-writing {
+  width: 90%;
+  height: 700px;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .editor-writing textarea {
+  font-family: "Hahmlet";
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 30px;
+  resize: none;
+  white-space: wrap;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .editor-writing textarea:focus {
+  outline: none;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .submit-btn {
+  width: 80px;
+  height: 45px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px 10px auto;
+  font-size: 15px;
+  transition: all 0.3s;
+  color: #555;
+  cursor: pointer;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li .submit-btn:hover {
+  background: #eee9f9;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li:nth-child(3) textarea {
+  height: 300px;
+}
+#modify-wrap #modify .modify-gap .modify-wrap form .update li:nth-child(4) {
+  border-bottom: none;
+}
