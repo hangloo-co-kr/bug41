@@ -1,49 +1,32 @@
+<?php include '../common/config.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].MYDIR.'/common/include.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].MYDIR.'/common/template/meta.php'; ?>
 <?php
-include_once('./header.php');
-$number = $_GET['mynumber'];
-$page = $_GET['page'];
+
+$number = (isset($_GET['mynumber'])) ? $_GET['mynumber'] : "";
+$page   = (isset($_GET['page'])) ? $_GET['page'] : "";
+
+if(!$number){
+    die('정상적인 접근이 아닙니다.'); // or history.go(-1); 등등
+}
+
 $sql = "SELECT * FROM board_practice where idx='".$number."'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>수정하기 페이지 연습</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../SynapEditorPackage/SynapEditor/synapeditor.min.css">
-    <script src="../js/lib/jquery-1.12.3.js"></script>
-    <script src="../SynapEditorPackage/SynapEditor/synapeditor.config.js"></script>
-    <script src="../SynapEditorPackage/SynapEditor/synapeditor.min.js"></script>
-    <script src="../SynapEditorPackage/SynapEditor/externals/SEDocModelParser/SEDocModelParser.min.js"></script>
-    <script src="../SynapEditorPackage/SynapEditor/externals/SEShapeManager/SEShapeManager.min.js"></script>
-    <script>
-        function initEditor() {
-            var se = new SynapEditor("synapEditor", synapEditorConfig);
-        }
-    </script>
-</head>
+
+<link rel="stylesheet" href="../SynapEditorPackage/SynapEditor/synapeditor.min.css">
+<script src="../SynapEditorPackage/SynapEditor/synapeditor.config.js"></script>
+<script src="../SynapEditorPackage/SynapEditor/synapeditor.min.js"></script>
+<script src="../SynapEditorPackage/SynapEditor/externals/SEDocModelParser/SEDocModelParser.min.js"></script>
+<script src="../SynapEditorPackage/SynapEditor/externals/SEShapeManager/SEShapeManager.min.js"></script>
+<script>
+    function initEditor() {
+        var se = new SynapEditor("synapEditor", synapEditorConfig);
+    }
+</script>
 <body onload="initEditor();">
-    <header id="header">
-        <div class="personal">
-            <div class="personal-gap">
-                <ul class="personal-wrap">
-                    <li class='gaib-page-btn'>
-                        <a href="/gab/content/gaib.php">회원가입</a>
-                    </li>
-                    <li class='login-page-btn'>
-                        <a href="/gab/content/login.php">로그인</a>
-                    </li>
-                    <li>
-                        <a href="/gab">내 정보</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <?php include $_SERVER["DOCUMENT_ROOT"].MYDIR.'/common/template/header.php'; ?>
     <div id="modify-wrap">
         <div class="title">
             <div class="title-gap">
@@ -81,10 +64,10 @@ $row = mysqli_fetch_array($result);
             </div>
         </div>
     </div>
-    <script src="../js/board.js"></script>
+    <script src="<?=MYDIR?>/assets/js/board.js"></script>
 </body>
 </html>
 
 <?php
-include_once('./footer.php');
+    #include_once('./footer.php');
 ?>

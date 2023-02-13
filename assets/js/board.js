@@ -152,7 +152,7 @@
         click: function(){
             $(this).addClass('on');
             $('#select .diary').removeClass('on');
-            location.replace('/gab/index.php');            
+            location.replace('/bug41/index.php');            
         }
     })
 
@@ -160,7 +160,7 @@
         click: function(){
             $(this).addClass('on');
             $('#select .board').removeClass('on');
-            location.replace('/gab/diary');
+            location.replace('/bug41/diary');
         }
     })
 
